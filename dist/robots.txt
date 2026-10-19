@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vinicius-dev-portfolio.vinicius666787.chatgpt.site/sitemap.xml
+Sitemap: https://portfolio-vinicius-tan.vercel.app/sitemap.xml
