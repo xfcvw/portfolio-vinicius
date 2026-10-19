@@ -2,6 +2,8 @@
 
 Portfólio pessoal estático, responsivo e acessível, desenvolvido com HTML, CSS e JavaScript puro.
 
+**Site publicado:** https://portfolio-vinicius-tan.vercel.app
+
 ## Estrutura
 
 ```text
