@@ -6,9 +6,9 @@ Portfólio pessoal estático, responsivo e acessível, desenvolvido com HTML, CS
 
 ```text
 portfolio-vinicius/
-├── .openai/
-│   └── hosting.json
 ├── dist/
+│   ├── assets/
+│   │   └── vinicius-linkedin.webp
 │   ├── favicon.svg
 │   ├── index.html
 │   ├── robots.txt

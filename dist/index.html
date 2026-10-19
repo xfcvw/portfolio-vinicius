@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinicius — Desenvolvedor em formação</title>
+    <meta
+      name="description"
+      content="Portfólio de Vinicius, estudante de Análise e Desenvolvimento de Sistemas com foco em back-end, aplicações web e soluções full stack."
+    />
+    <meta name="theme-color" content="#111310" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="canonical" href="https://vinicius-dev-portfolio.vinicius666787.chatgpt.site/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Vinicius — Desenvolvedor em formação" />
+    <meta
+      property="og:description"
+      content="Projetos, formação e estudos em desenvolvimento de software, Java, Laravel e PostgreSQL."
+    />
+    <meta property="og:url" content="https://vinicius-dev-portfolio.vinicius666787.chatgpt.site/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/192492794?v=4&amp;s=1200" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <a class="terminal-logo" href="#perfil" aria-label="Ir para o início">
+        <span class="prompt">root@</span>vinicius:<span class="path">~</span>#<span class="cursor" aria-hidden="true">_</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#perfil" data-nav>Perfil</a>
+        <a href="#sobre" data-nav>Sobre</a>
+        <a href="#stack" data-nav>Stack</a>
+        <a href="#formacao" data-nav>Formação</a>
+        <a href="#projetos" data-nav>Projetos</a>
+        <a href="#contato" data-nav>Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Ativar tema claro" data-theme-toggle>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.2A8 8 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z" />
+          </svg>
+        </button>
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Navegação móvel" data-mobile-nav>
+        <a href="#perfil" data-nav><span>00</span> Perfil</a>
+        <a href="#sobre" data-nav><span>01</span> Sobre</a>
+        <a href="#stack" data-nav><span>02</span> Stack</a>
+        <a href="#formacao" data-nav><span>03</span> Formação</a>
+        <a href="#projetos" data-nav><span>04</span> Projetos</a>
+        <a href="#contato" data-nav><span>06</span> Contato</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="perfil" aria-labelledby="hero-title">
+        <canvas class="particle-canvas" aria-hidden="true" data-particles></canvas>
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Olá, eu sou</p>
+            <h1 id="hero-title">Vinicius<span>.</span></h1>
+            <p class="type-line" aria-live="polite">
+              <span aria-hidden="true">&gt;</span>
+              <span data-typewriter>Desenvolvedor em formação</span><span class="type-cursor" aria-hidden="true">|</span>
+            </p>
+            <p class="hero-description">
+              Transformo estudo em projetos reais — do back-end em Java e Laravel a experiências web completas.
+            </p>
+
+            <div class="availability" role="status">
+              <span class="availability-dot" aria-hidden="true"></span>
+              Disponível para estágio e oportunidades júnior
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://www.linkedin.com/in/vinicius-rodrigues-salgado-479110297/" target="_blank" rel="noreferrer">
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button button-secondary" href="https://github.com/xfcvw" target="_blank" rel="noreferrer">
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="portrait-wrap reveal reveal-delay">
+            <div class="portrait-frame">
+              <div class="portrait-grid" aria-hidden="true"></div>
+              <img
+                src="./assets/vinicius-linkedin.webp"
+                alt="Foto de perfil de Vinicius"
+                width="400"
+                height="400"
+                fetchpriority="high"
+                decoding="async"
+              />
+              <span class="online-badge"><i aria-hidden="true"></i> ONLINE</span>
+              <span class="portrait-code" aria-hidden="true">01 / DEV</span>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#sobre">
+          <span>SCROLL</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section class="section about" id="sobre" aria-labelledby="about-title">
+        <div class="container">
+          <p class="section-index reveal">[ 01 ] SOBRE</p>
+          <div class="section-heading about-heading reveal">
+            <h2 id="about-title">Um pouco<br />sobre mim<span>.</span></h2>
+            <div class="about-copy">
+              <p>
+                Sou estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Senac — Campus Nações Unidas. Estou construindo minha base em desenvolvimento de software com projetos que vão além dos exercícios de aula.
+              </p>
+              <p>
+                Meu foco está em back-end e aplicações full stack. Gosto de entender a regra de negócio, modelar os dados e transformar a ideia em uma solução que realmente funciona — aprendendo, testando e melhorando a cada entrega.
+              </p>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card reveal">
+              <span class="stat-number">01</span>
+              <h3>Cursando ADS</h3>
+              <p>Graduação iniciada em 2026, atualmente em andamento.</p>
+            </article>
+            <article class="stat-card reveal">
+              <span class="stat-number">02</span>
+              <h3>Foco em back-end</h3>
+              <p>Java, Laravel, APIs, dados e arquitetura de aplicações.</p>
+            </article>
+            <article class="stat-card reveal">
+              <span class="stat-number">03</span>
+              <h3>Projetos públicos</h3>
+              <p>Código, documentação e evolução registrados no GitHub.</p>
+            </article>
+            <article class="stat-card reveal">
+              <span class="stat-number">04</span>
+              <h3>Aprendizado contínuo</h3>
+              <p>Da lógica à infraestrutura, um commit por vez.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack-section" id="stack" aria-labelledby="stack-title">
+        <div class="container stack-heading reveal">
+          <p class="section-index">[ 02 ] STACK</p>
+          <h2 id="stack-title">Tecnologias que estudo<br />e aplico<span>.</span></h2>
+        </div>
+
+        <div class="marquee" aria-label="Tecnologias">
+          <div class="marquee-track">
+            <div class="tech-list">
+              <span><b>⌘</b> Java</span><span><b>◆</b> Laravel</span><span><b>PHP</b> PHP</span><span><b>DB</b> PostgreSQL</span><span><b>SQL</b> MySQL</span><span><b>TS</b> TypeScript</span><span><b>⚛</b> React</span><span><b>JS</b> JavaScript</span><span><b>◫</b> HTML &amp; CSS</span><span><b>⬡</b> Supabase</span><span><b>▣</b> Docker</span><span><b>↗</b> Git</span><span><b>UI</b> UX/UI</span>
+            </div>
+            <div class="tech-list" aria-hidden="true">
+              <span><b>⌘</b> Java</span><span><b>◆</b> Laravel</span><span><b>PHP</b> PHP</span><span><b>DB</b> PostgreSQL</span><span><b>SQL</b> MySQL</span><span><b>TS</b> TypeScript</span><span><b>⚛</b> React</span><span><b>JS</b> JavaScript</span><span><b>◫</b> HTML &amp; CSS</span><span><b>⬡</b> Supabase</span><span><b>▣</b> Docker</span><span><b>↗</b> Git</span><span><b>UI</b> UX/UI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education" id="formacao" aria-labelledby="education-title">
+        <div class="container">
+          <p class="section-index reveal">[ 03 ] FORMAÇÃO</p>
+          <div class="section-heading reveal">
+            <h2 id="education-title">Aprender, aplicar<br />e evoluir<span>.</span></h2>
+            <p class="heading-note">Minha trajetória é construída entre a graduação, cursos complementares e prática em projetos próprios.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2026 — EM ANDAMENTO</div>
+              <div class="timeline-content">
+                <p class="timeline-type">GRADUAÇÃO</p>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p class="timeline-place">Centro Universitário Senac — Campus Nações Unidas</p>
+                <p>Lógica de programação, Java, banco de dados, modelagem de sistemas, UX/UI e desenvolvimento de projetos integradores.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2026</div>
+              <div class="timeline-content">
+                <p class="timeline-type">CERTIFICAÇÕES · DIO</p>
+                <h3>Inteligência Artificial e Engenharia de Prompts</h3>
+                <p class="timeline-place">Formação complementar</p>
+                <p>Estudos em Engenharia de Prompts, IA moderna e aplicação de inteligência artificial na carreira e em projetos digitais.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">CONTÍNUO</div>
+              <div class="timeline-content">
+                <p class="timeline-type">ESTUDOS PRÁTICOS</p>
+                <h3>Desenvolvimento web e arquitetura de aplicações</h3>
+                <p class="timeline-place">Projetos autorais e acadêmicos</p>
+                <p>Prática com Java, Laravel, PostgreSQL, autenticação, permissões, Docker, Git, deploy e interfaces responsivas.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projetos" aria-labelledby="projects-title">
+        <div class="container">
+          <p class="section-index reveal">[ 04 ] PROJETOS</p>
+          <div class="section-heading reveal">
+            <h2 id="projects-title">Projetos que<br />viraram código<span>.</span></h2>
+            <p class="heading-note">Problemas reais, decisões técnicas e aprendizado documentado.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-number">01</div>
+              <div class="project-main">
+                <p class="project-stack">PHP 8.4 · Laravel 13 · PostgreSQL · Docker</p>
+                <h3>InventoryFlow SaaS</h3>
+                <p>Aplicação SaaS multi-tenant para estoque e vendas, com workspaces, permissões por cargo, múltiplos depósitos, pedidos, relatórios, auditoria e testes automatizados.</p>
+                <div class="project-actions">
+                  <a href="https://github.com/xfcvw/inventoryFlow" target="_blank" rel="noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a>
+                  <span class="project-status">Execução local via Docker</span>
+                </div>
+              </div>
+              <div class="project-symbol" aria-hidden="true">IF</div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">02</div>
+              <div class="project-main">
+                <p class="project-stack">HTML · CSS · JavaScript · Supabase · Vercel</p>
+                <h3>Extreme World Palworld</h3>
+                <p>Plataforma web de comércio e gestão para uma comunidade gamer, com autenticação Discord, carteira virtual, Mercado Pago, fila de entregas e painel administrativo.</p>
+                <div class="project-actions">
+                  <a href="https://github.com/xfcvw/extreme-world-palworld" target="_blank" rel="noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a>
+                  <a href="https://extreme-world-palworld.vercel.app" target="_blank" rel="noreferrer">Ver online <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+              <div class="project-symbol" aria-hidden="true">EW</div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">03</div>
+              <div class="project-main">
+                <p class="project-stack">Java 17 · CLI · Validação de CPF · Testes</p>
+                <h3>Sistema de Estoque Tributável</h3>
+                <p>Projeto acadêmico em Java para cadastro de pessoas e produtos, controle de entradas e vendas, estoque mínimo e simulação didática de regimes tributários.</p>
+                <div class="project-actions">
+                  <a href="https://github.com/xfcvw/sistema-estoque-tributavel" target="_blank" rel="noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a>
+                  <span class="project-status">Aplicação de terminal</span>
+                </div>
+              </div>
+              <div class="project-symbol" aria-hidden="true">{ }</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journal" id="blog" aria-labelledby="journal-title">
+        <div class="container">
+          <p class="section-index reveal">[ 05 ] BLOG · EM BREVE</p>
+          <div class="section-heading reveal">
+            <h2 id="journal-title">Notas do que<br />estou aprendendo<span>.</span></h2>
+            <p class="heading-note">Uma área para transformar estudos e desafios de projeto em conteúdo útil.</p>
+          </div>
+
+          <div class="journal-grid">
+            <article class="journal-card reveal">
+              <div class="journal-meta"><span>RASCUNHO</span><span>5 MIN</span></div>
+              <h3>Como organizei permissões multi-tenant no InventoryFlow</h3>
+              <p>Decisões sobre workspaces, papéis de usuário e isolamento dos dados em uma aplicação SaaS.</p>
+            </article>
+            <article class="journal-card reveal">
+              <div class="journal-meta"><span>RASCUNHO</span><span>4 MIN</span></div>
+              <h3>Validação de CPF em Java sem mistério</h3>
+              <p>O raciocínio por trás dos dígitos verificadores e como testar entradas inválidas no terminal.</p>
+            </article>
+            <article class="journal-card reveal">
+              <div class="journal-meta"><span>RASCUNHO</span><span>6 MIN</span></div>
+              <h3>Do Discord ao pagamento: integrando serviços</h3>
+              <p>Aprendizados ao conectar autenticação, checkout, webhooks e uma fila de entrega.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contato" aria-labelledby="contact-title">
+        <div class="contact-orbit orbit-one" aria-hidden="true"></div>
+        <div class="contact-orbit orbit-two" aria-hidden="true"></div>
+        <div class="container contact-inner reveal">
+          <p class="section-index">[ 06 ] CONTATO</p>
+          <h2 id="contact-title">Bora construir<br />algo juntos<span>?</span></h2>
+          <p class="contact-copy">Estou disponível para estágio, oportunidades júnior e projetos em que eu possa aprender, colaborar e entregar valor.</p>
+
+          <button class="email-copy" type="button" data-copy-email data-email="vinicius666787@gmail.com">
+            <span>vinicius666787@gmail.com</span>
+            <strong data-copy-label>Copiar e-mail</strong>
+          </button>
+
+          <div class="social-links" aria-label="Redes sociais">
+            <a href="mailto:vinicius666787@gmail.com" aria-label="Enviar e-mail para Vinicius">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm2 2v.5l7 4.8 7-4.8V7H5Zm14 10V9.9l-7 4.8-7-4.8V17h14Z" /></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vinicius-rodrigues-salgado-479110297/" target="_blank" rel="noreferrer" aria-label="LinkedIn de Vinicius">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 3.6A2.3 2.3 0 1 1 5.3 8a2.3 2.3 0 0 1 0-4.5ZM3.4 9.5h3.8V21H3.4V9.5Zm6.1 0h3.7v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-3.9v-5.2c0-1.3 0-2.9-1.8-2.9-1.8 0-2.1 1.4-2.1 2.8V21H9.5V9.5Z" /></svg>
+            </a>
+            <a href="https://github.com/xfcvw" target="_blank" rel="noreferrer" aria-label="GitHub de Vinicius">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span data-year>2026</span> Vinicius.</p>
+        <p>Feito com código, curiosidade e café.</p>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>E-mail copiado!</div>
+  </body>
+</html>

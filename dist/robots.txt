@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vinicius-dev-portfolio.vinicius666787.chatgpt.site/sitemap.xml
