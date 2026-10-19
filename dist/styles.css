@@ -1,15 +1,15 @@
 :root {
-  --bg: #111310;
-  --surface: #171a15;
-  --surface-2: #1d211a;
-  --text: #f0f2eb;
-  --muted: #a7ad9e;
-  --line: rgba(240, 242, 235, 0.14);
-  --accent: #a8ff60;
-  --accent-2: #52d9ff;
-  --accent-ink: #122007;
-  --header: rgba(17, 19, 16, 0.78);
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+  --bg: #08050f;
+  --surface: rgba(20, 10, 32, 0.9);
+  --surface-2: rgba(36, 0, 70, 0.72);
+  --text: #f7f2fb;
+  --muted: #b8abc7;
+  --line: rgba(196, 128, 255, 0.17);
+  --accent: #b44cff;
+  --accent-2: #7b2cbf;
+  --accent-ink: #13031f;
+  --header: rgba(8, 5, 15, 0.78);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
   --radius: 18px;
   --font-sans: "Manrope", Inter, system-ui, sans-serif;
   --font-mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
@@ -17,17 +17,17 @@
 }
 
 [data-theme="light"] {
-  --bg: #f3f4ee;
-  --surface: #ffffff;
-  --surface-2: #e8eadf;
-  --text: #161814;
-  --muted: #5f6659;
-  --line: rgba(22, 24, 20, 0.15);
-  --accent: #5ce000;
-  --accent-2: #008db4;
-  --accent-ink: #112306;
-  --header: rgba(243, 244, 238, 0.82);
-  --shadow: 0 24px 80px rgba(31, 40, 23, 0.12);
+  --bg: #f7f2fb;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-2: rgba(235, 218, 247, 0.8);
+  --text: #180824;
+  --muted: #675873;
+  --line: rgba(60, 9, 108, 0.16);
+  --accent: #7209b7;
+  --accent-2: #3c096c;
+  --accent-ink: #ffffff;
+  --header: rgba(247, 242, 251, 0.84);
+  --shadow: 0 24px 80px rgba(36, 0, 70, 0.14);
 }
 
 *,
@@ -44,10 +44,34 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(60, 9, 108, 0.42), transparent 28rem),
+    radial-gradient(circle at 86% 34%, rgba(36, 0, 70, 0.5), transparent 34rem),
+    linear-gradient(145deg, #050308 0%, var(--bg) 46%, #0c0514 100%);
+  background-attachment: fixed;
   font-family: var(--font-sans);
   line-height: 1.6;
   transition: color 0.3s ease, background 0.3s ease;
+}
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(114, 9, 183, 0.13), transparent 28rem),
+    radial-gradient(circle at 86% 34%, rgba(60, 9, 108, 0.1), transparent 34rem),
+    var(--bg);
+}
+
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 body.menu-open {
@@ -235,11 +259,12 @@ button {
 }
 
 .particle-canvas {
-  position: absolute;
+  position: fixed;
+  z-index: 0;
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.45;
+  opacity: 0.82;
   pointer-events: none;
 }
 
@@ -250,7 +275,7 @@ button {
   width: 54vw;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 13%, transparent), transparent 66%);
+  background: radial-gradient(circle, color-mix(in srgb, #3c096c 40%, transparent), transparent 68%);
   content: "";
   filter: blur(10px);
   pointer-events: none;
@@ -575,7 +600,8 @@ button {
   padding: 90px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(10, 5, 17, 0.8), rgba(36, 0, 70, 0.34), rgba(10, 5, 17, 0.82));
+  backdrop-filter: blur(3px);
   overflow: hidden;
 }
 
@@ -623,6 +649,102 @@ button {
   border-radius: 9px;
   background: var(--accent);
   font-size: 0.7rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 66px;
+}
+
+.tech-card {
+  position: relative;
+  display: grid;
+  min-height: 142px;
+  align-content: center;
+  justify-items: center;
+  gap: 14px;
+  padding: 18px 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(27, 13, 43, 0.92), rgba(10, 6, 17, 0.86));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.025);
+  overflow: hidden;
+  transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.tech-card::before {
+  position: absolute;
+  inset: auto 15% -35% 15%;
+  height: 60%;
+  border-radius: 50%;
+  background: rgba(180, 76, 255, 0.22);
+  content: "";
+  filter: blur(24px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.tech-card:hover {
+  border-color: rgba(180, 76, 255, 0.68);
+  background: linear-gradient(145deg, rgba(60, 9, 108, 0.66), rgba(14, 7, 24, 0.92));
+  box-shadow: 0 18px 46px rgba(36, 0, 70, 0.35);
+  transform: translateY(-7px);
+}
+
+.tech-card:hover::before {
+  opacity: 1;
+}
+
+.tech-card svg {
+  position: relative;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  fill: none;
+  stroke: var(--accent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+  filter: drop-shadow(0 0 12px rgba(180, 76, 255, 0.3));
+}
+
+.tech-card span:last-child {
+  position: relative;
+  z-index: 1;
+  color: var(--muted);
+  font: 600 0.7rem/1.2 var(--font-sans);
+  text-align: center;
+}
+
+.tech-mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-width: 54px;
+  min-height: 48px;
+  place-items: center;
+  color: var(--accent);
+  font: 800 1.05rem/1 var(--font-mono);
+  letter-spacing: -0.08em;
+  text-shadow: 0 0 16px rgba(180, 76, 255, 0.34);
+}
+
+.tech-mark-square {
+  min-width: 48px;
+  border: 3px solid currentColor;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+[data-theme="light"] .tech-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(241, 229, 249, 0.9));
+}
+
+[data-theme="light"] .stack-section,
+[data-theme="light"] .projects {
+  background: rgba(247, 242, 251, 0.8);
 }
 
 @keyframes marquee {
@@ -674,7 +796,8 @@ button {
 }
 
 .projects {
-  background: var(--surface);
+  background: rgba(12, 6, 20, 0.76);
+  backdrop-filter: blur(3px);
 }
 
 .project-list {
@@ -1050,6 +1173,10 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .tech-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .journal-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1138,6 +1265,16 @@ button {
 
   .marquee {
     margin-top: 50px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 48px;
+  }
+
+  .tech-card {
+    min-height: 128px;
   }
 
   .timeline {
